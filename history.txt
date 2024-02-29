@@ -1,65 +1,30 @@
-  144  ls
-  145  cat wilders.csv 
-  146  ls
-  147  touch php_france_2019.csv
-  148  ls
-  149  cat grep france wilders.csv 
-  150* 
-  151  ls
-  152  cat grep "france" wilders.csv 
-  153  grep "france" wilders.csv 
-  154  echo grep "france" wilders.csv 
-  155  grep "France" wilders.csv 
-  156  grep "France,2019,PHP" wilders.csv 
-  157  grep "France,2019,PHP" wilders.csv > php_france_2019.csv 
-  158  touch javascript biarritz toulouse javascript_biarritz_toulouse.csv
-  159  ls
-  160  grep "Toulouse" wilders.csv 
-  161  grep "Toulouse" wilders.csv > toulouse 
-  162  cat toulouse 
-  163  grep "Biarritz" wilders.csv > biarritz 
-  164  cat biarritz 
-  165  grep "JavaScript" wilders.csv > javascript 
-  166  cat javascript
-  167  man sort
-  168  ls
-  169  rm javascript
-  170  grep "JavaScript" biarritz > javascript_biarritz_toulouse.csv 
-  171  grep "JavaScript" toulouse > javascript_biarritz_toulouse.csv 
-  172  cat javascript_biarritz_toulouse.csv 
-  173  grep "JavaScript" biarritz >> javascript_biarritz_toulouse.csv 
-  174  cat javascript_biarritz_toulouse.csv 
-  175  touch history.txt
-  176  tail
-  177  history
-  178  tail -35 history > history.txt
-  179  tail -35 history > history.txt 
-  180  tail -5 history > history.txt 
-  181  tail -5 history
-  182  history tail -5 
-  183  history > history.txt 
-  184  cat history.txt 
-  185  tail -35 history.txt > history.txt 
-  186  cat history.txt 
-  187  cat history.txt 
-  188  history > history.txt 
-  189  cat history.txt 
-  190  cat tail -35 history.txt > history.txt 
-  191  tail -35 history.txt > history.txt 
-  192  cat history.txt 
-  193  history > history.txt | tail -50
-  194  cat history
-  195  cat history.txt 
-  196  tail -50 history.txt 
-  197  cat history.txt 
-  198  tail -50 history.txt > history.txt 
-  199  cat history.txt 
-  200  touch temp
-  201  history > temp
-  202  cat temp
-  203  tail -70 temp > history.txt 
-  204  cat history.txt 
-  205  history > temp
-  206  tail -59 temp > history.txt 
-  207  cat history.txt 
-  208  history > temp
+  215  ls
+  216  grep "France,2019,PHP" < wilders.csv | echo > wc -l > php_france_2019.csv
+  217  ls
+  218  cat php_france_2019.csv 
+  219  grep "France,2019,PHP" < wilders.csv | echo wc -l > php_france_2019.csv
+  220  cat php_france_2019.csv 
+  221  grep "France,2019,PHP" < wilders.csv | echo "wc -l" > php_france_2019.csv
+  222  cat php_france_2019.csv 
+  223  grep "France,2019,PHP" < wilders.csv | echo 'wc -l' > php_france_2019.csv
+  224  cat php_france_2019.csv 
+  225  grep "France,2019,PHP" < wilders.csv | echo wc -l >> php_france_2019.csv
+  226  cat php_france_2019.csv 
+  227  grep "France,2019,PHP" wilders.csv | echo wc -l > php_france_2019.csv
+  228  cat php_france_2019.csv 
+  229  grep "France,2019,PHP" wilders.csv | wc -l > php_france_2019.csv
+  230  cat php_france_2019.csv 
+  231  grep "Toulouse" wilders.csv > toulouse.csv 
+  232  cat toulouse.csv 
+  233  grep "Biarritz" wilders.csv > biarritz.csv 
+  234  cat biarritz.csv 
+  235  ls
+  236  grep "JavaScript" toulouse.csv > javascript_biarritz_toulouse.csv
+  237  grep "JavaScript" biarritz.csv >> javascript_biarritz_toulouse.csv
+  238  cat javascript_biarritz_toulouse.csv 
+  239  tail -50 history > history.txt
+  240  history > history.txt
+  241  cat history.txt 
+  242  tail -30 history.txt > history.txt 
+  243  cat history.txt 
+  244  history > temp.txt
